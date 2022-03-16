@@ -1,0 +1,137 @@
+#include <stdio.h>
+#include <locale.h>
+  
+  // Questão 02
+  
+float segundos(float H, float M, float S) {
+float min,calculo,ho;
+cálculo=(S+(M*60)+(H*60*60));
+
+retornar cálculo;
+
+}
+
+int main() {
+
+setlocale(LC_ALL, "Português");
+
+flutuar H,M,S;
+
+printf("\nDigite a hora, o(s) minuto(s) eo(s) segundo(s): \n");
+
+scanf("%f%f%f",&H,&M,&S);
+
+printf("\nO total de segundos são: %f",segundos(H,M,S));
+
+}
+
+-------------------------------------------------- 
+#include <stdio.h>
+  
+  // Questão 03
+  
+int Edivisivel(int a, int b)
+{
+  if (a%b) /* Se houver resto, nao e' divisivel */
+     retornar 0;
+  else /* Nao havendo resto, e' divisivel */
+     retorno 1;
+}
+int main()
+{
+    int a, b;
+    printf ("Entre com dois inteiros para testar se o primeiro e' divisivel pelo segundo: ");
+    scanf("%d %d", &a, &b);
+    if(Edivisivel(a,b))
+        printf("O primeiro numero e' divisivel pelo segundo");
+
+    outro
+        printf("O primeiro numero nao e' divisivel pelo segundo");
+
+}
+-------------------------------------------------- 
+#include <stdio.h>
+ #include <conio.h>
+  #include <math.h>
+  
+  // Questão 04
+    
+ #define PI 3.14
+  
+ float volume(float raio){
+     float v= 4/3 * (PI*pow(raio,3));
+     retornar v;
+  }
+  
+ int main(){
+     float raio,resultado;
+  
+     printf(Escreva o raio de uma esfera para calcular o seu volume:");
+     scanf("%f",&raio);
+      
+     resultado=volume(raio);
+     printf("%.3f\n",resultado);
+  
+     getchar();
+     retornar 0;
+ }
+-------------------------------------------------- 
+
+#include <stdio.h>
+ #include <locale.h>
+  
+  // Questão 09
+  
+ int soma_div (int n);
+  
+ int main() {
+         setlocale (LC_ALL, "Português_Brasil");
+          
+         int num, resultado;
+          
+         printf("\n QUESTÃO 09 \n");
+         printf("\nEscreveu um valor:");
+         scanf("%d", &num);
+          
+         resultado = soma_div(num);
+          
+         printf("\nA soma dos divisores é: %d\n", resultado);
+ }
+  
+ int soma_div(int n) {
+         int divisores;
+          
+         for(int d = 1; d <= n; d++) {
+                 if(n % d == 0) {
+                          
+                         divisores = divisores + d;
+                 }
+         }
+         divisores de retorno;
+         retornar 0;
+ }
+ 
+ -------------------------------------------------- 
+ 
+ #include <stdio.h>
+ #include <locale.h>
+   
+  // Questão 19
+   
+ int fatorial(int n) {
+     int resultado = 1;
+     enquanto (n > 1) resultado *= n--;
+     resultado de retorno;
+ }
+ int main(void) {
+          
+         setlocale(LC_ALL, "Português_Brasil");
+          
+     int n;
+     printf("Escreva o numero a ser fatorado:\n");
+     scanf("%d",&n);
+     printf("%d", fatorial(n));
+ }
+ 
+ -------------------------------------------------- 
+ 
