@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <locale.h>
+ #include <locale.h>
   
   // Questão 02
   
@@ -26,6 +26,7 @@ printf("\nO total de segundos são: %f",segundos(H,M,S));
 }
 
 -------------------------------------------------- 
+
 #include <stdio.h>
   
   // Questão 03
@@ -50,6 +51,7 @@ int main()
 
 }
 -------------------------------------------------- 
+
 #include <stdio.h>
  #include <conio.h>
   #include <math.h>
@@ -76,6 +78,34 @@ int main()
      retornar 0;
  }
 -------------------------------------------------- 
+
+#include <Studio.h>
+ #include <stdlib.h>
+  #include <locale.h>
+  
+  // Questão 08
+  
+int soma (int valor){
+    int soma = 0
+        for(int n = valor; n>=1; n--){
+            soma = soma + n;
+        }
+        return soma;
+}
+
+int main (){
+ setlocale(LC_ALL, "portuguese_Brazil");
+ int n, resposta;
+
+ print("digite o valor de n: ")
+ scanf("%d, &n);
+
+ resposta = soma(n);
+ prinf("o resultado da soma vai ser: %d", resposta);
+ 
+ return 0;
+
+--------------------------------------------------
 
 #include <stdio.h>
  #include <locale.h>
@@ -114,7 +144,7 @@ int main()
  -------------------------------------------------- 
  
  #include <stdio.h>
- #include <locale.h>
+  #include <locale.h>
    
   // Questão 19
    
