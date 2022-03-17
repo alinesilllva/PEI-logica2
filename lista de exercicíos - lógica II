@@ -169,52 +169,55 @@ int main (){
  -------------------------------------------------- 
 
 #include <stdio.h>
-#include <stdlib.h>
 #include <locale.h>
-
-int MDC(int x, int y){
-    int menor, resultado = 1;
-
-      if(x < y){
-          menor = x;
-    } else {
-        menor = y;
-    }
-
-    for (int d  = 1;  d <= menor; d++){
-        if(x % d == 0 and y % d == 0){
-            resultado = d;
-        }
-    }
-    return resultado;
+   
+  // Questão 18
+   
+bool x = false;
+bool primo(int n){
+	for (int k = 1; k < n; k++){
+		if(n % k == 0){
+			if(k != n && k != 1){
+				x = false;
+			}else{
+				x = true;
+			}
+		}
+	}
+	if(x == true){
+		printf("Primo: ");
+		printf("%d\n", n);
+		return x;
+	}
+	x = false;
+	
+	return x;
 }
 
- -------------------------------------------------- 
-
-  
-  // Questão 17
-  
-int main(){
+int main(int argc, char argv){
 	
-    setlocale(LC_ALL, "Portuguese_Brazil");
-
-	printf("sub rotina que informa o MDC dos números.\n\n");
+	int p_num = 100;
+	int num_p = 3;
 	
-    int numero_1, numero_2, resultado_final;
-
-    printf("\n Informe o primeiro número:\n ");
-    scanf("%d", &numero_1);
-
-    printf("\n Informe o segundo número:\n ");
-    scanf("%d", &numero_2);
-
-    resultado_final = MDC(numero_1, numero_2);
-
-	printf("\n\n");
-    printf("\n O MDC dos números informados é: %d ", resultado_final);
-
-    return 0;
-
+	int increment = 0;
+	
+	int count =0;
+	bool loop = true;
+	
+	while(loop){
+	bool fun_primo;
+	fun_primo = primo(p_num + increment);
+	increment ++;
+	
+	if(fun_primo){
+		count ++;
+		
+	}if(count == num_p){
+		break;
+	}
+ }
+	
+	return 0;
 }
  -------------------------------------------------- 
  
