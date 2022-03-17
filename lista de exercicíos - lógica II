@@ -314,6 +314,3 @@ int main(int argc, char argv){
      scanf("%d",&n);
      printf("%d", fatorial(n));
  }
- 
- 
- 
