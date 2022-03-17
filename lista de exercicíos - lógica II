@@ -29,28 +29,28 @@
  // Questão 2
 
 int segundos(int h, int m, int s){
-	int resultado;
-	resultado = s + (h * 3600) + (m * 60);
-	return resultado;
+    int resultado;
+    resultado = s + (h * 3600) + (m * 60);
+    return resultado;
 }
 
 int main() {
-	setlocale(LC_ALL, "Portuguese_Brazil");
+    setlocale(LC_ALL, "Portuguese_Brazil");
 	
-	int Hr, Mn, S, resultado;
+    int Hr, Mn, S, resultado;
 	
-	printf("\n ENTRE COM AS HORAS: ");
-	scanf("%d", &Hr);
+    printf("\n ENTRE COM AS HORAS: ");
+    scanf("%d", &Hr);
 	
-	printf("\n ENTRE COM OS MINUTOS: ");
-	scanf("%d", &Mn);
+    printf("\n ENTRE COM OS MINUTOS: ");
+    scanf("%d", &Mn);
 	
-	printf("\nENTRE COM OS SEGUNDOS: ");
-	scanf("%d", &S);
+    printf("\nENTRE COM OS SEGUNDOS: ");
+    scanf("%d", &S);
 
-	resultado = segundos(Hr, Mn, S);
+    resultado = segundos(Hr, Mn, S);
 	
-	printf("O total de segundos é: %d", resultado);
+    printf("O total de segundos é: %d", resultado);
 	
 }
 
@@ -62,9 +62,9 @@ int main() {
   
 int Edivisivel(int a, int b)
 {
-  if (a%b) /* Se houver resto, nao e' divisivel */
+  if (a%b) /* Se houver resto, nao vai ser divisivel /
      retornar 0;
-  else /* Nao havendo resto, e' divisivel */
+  else /* Nao havendo resto, vai ser divisivel /
      retorno 1;
 }
 int main()
@@ -74,8 +74,7 @@ int main()
     scanf("%d %d", &a, &b);
     if(Edivisivel(a,b))
         printf("O primeiro numero e' divisivel pelo segundo");
-
-    outro
+    else
         printf("O primeiro numero nao e' divisivel pelo segundo");
 
 }
@@ -172,6 +171,8 @@ int main (){
  prinf("o resultado da soma vai ser: %d", resposta);
  
  return 0;
+
+}
 
 --------------------------------------------------
 
