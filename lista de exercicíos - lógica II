@@ -26,7 +26,7 @@
 #include <stdlib.h>
 #include <locale.h>
 
-// Questão 2
+ // Questão 2
 
 int segundos(int h, int m, int s){
 	int resultado;
@@ -113,7 +113,7 @@ int main()
  #include <locale.h>
   #include <stdlib.h>
 
-// Questão 06
+ // Questão 06
 
 float peso_ideal(float altura, int sexo);
 
