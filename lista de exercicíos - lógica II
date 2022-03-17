@@ -28,25 +28,20 @@
   
   // Questão 02
   
-float segundos(float H, float M, float S) {
-float min,calculo,ho;
-cálculo=(S+(M*60)+(H*60*60));
+ float segundos(float H, float M, float S) {
+ float min,calculo,ho;
+ cálculo=(S+(M*60)+(H*60*60));
 
-retornar cálculo;
+ retornar cálculo;
 
 }
 
 int main() {
-
 setlocale(LC_ALL, "Português");
-
 flutuar H,M,S;
-
 printf("\nDigite a hora, o(s) minuto(s) eo(s) segundo(s): \n");
-
 scanf("%f%f%f",&H,&M,&S);
-
-printf("\nO total de segundos são: %f",segundos(H,M,S));
+ printf("\nO total de segundos são: %f",segundos(H,M,S));
 
 }
 
